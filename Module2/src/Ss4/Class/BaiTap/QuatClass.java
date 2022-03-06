@@ -66,5 +66,5 @@ public class QuatClass {
     private double radius = 5;
     private String color= "Blue";
     }
-    public
-}
+
+

@@ -26,9 +26,5 @@ public class StopWatchClass {
     public StopWatchClass(){
         this.startTime = (int) new Date().getTime();
     }
-    public void Start(){
-        startTime
-    }
-
 
 }
