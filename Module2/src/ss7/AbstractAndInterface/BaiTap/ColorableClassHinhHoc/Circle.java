@@ -37,4 +37,11 @@ public class Circle extends Shape implements Colerble{
     public String howToColor(){
         return "Color all four sides";
     }
+    public void KiemTraColor(){
+        if(getColor() == "Colorable"){
+            System.out.println(howToColor());
+        }
+        else
+            System.out.println(toString());
+    }
 }
