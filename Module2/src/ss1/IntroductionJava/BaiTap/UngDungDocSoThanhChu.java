@@ -5,15 +5,15 @@ import java.util.Scanner;
 
 public class UngDungDocSoThanhChu {
     public static void main(String[] args) {
-        int HangChuc;
-        int HangTram;
-        int SoNguyen;
+        int hangChuc;
+        int hangTram;
+        int soNguyen;
         Scanner scanner = new Scanner(System.in);
         System.out.println("Nhap vao so nguyen: ");
-        SoNguyen = scanner.nextInt();
-        if(SoNguyen>=100 && SoNguyen<1000){
-            HangTram = SoNguyen/100;
-            switch (HangTram){
+        soNguyen = scanner.nextInt();
+        if(soNguyen>=100 && soNguyen<1000){
+            hangTram = soNguyen/100;
+            switch (hangTram){
                 case 1:
                     System.out.print("one");break;
                 case 2:
@@ -34,11 +34,11 @@ public class UngDungDocSoThanhChu {
                     System.out.print("nine");break;
             }
             System.out.print("hundred ");
-            SoNguyen = SoNguyen%100;
+            soNguyen = soNguyen%100;
         }
-        if(SoNguyen>=20&&SoNguyen<100){
-            HangChuc = SoNguyen/10;
-                switch (HangChuc){
+        if(soNguyen>=20&&soNguyen<100){
+            hangChuc = soNguyen/10;
+                switch (hangChuc){
                     case 2:
                         System.out.print("two");break;
                     case 3:
@@ -58,11 +58,11 @@ public class UngDungDocSoThanhChu {
 
 
                 }
-            SoNguyen = SoNguyen%10;
+            soNguyen = soNguyen%10;
             System.out.print("ty ");
         }
-        if(SoNguyen>=0 && SoNguyen<10){
-            switch (SoNguyen){
+        if(soNguyen>=0 && soNguyen<10){
+            switch (soNguyen){
                 case 0:
                     System.out.print("zero");break;
                 case 1:
@@ -87,8 +87,8 @@ public class UngDungDocSoThanhChu {
                     System.out.println("out of bility");
 
             }
-        }else if(SoNguyen>=10&&SoNguyen<20){
-            switch (SoNguyen){
+        }else if(soNguyen>=10&&soNguyen<20){
+            switch (soNguyen){
                 case 10:
                     System.out.print("ten");break;
                 case 11:

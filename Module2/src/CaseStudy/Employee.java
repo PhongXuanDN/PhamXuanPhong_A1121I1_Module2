@@ -91,7 +91,9 @@ public class Employee {
     private int soCMND;
     private int soDienThoai;
     private String email;
+    //Trình độ sẽ lưu trữ các thông tin: Trung cấp, Cao đẳng, Đại học và sau đại học
     private String trinhDo;
+    //Vị trí sẽ lưu trữ các thông tin: Lễ tân, phục vụ, chuyên viên, giám sát, quản lý, giám đốc.
     private String viTri;
     private  int luong;
 
