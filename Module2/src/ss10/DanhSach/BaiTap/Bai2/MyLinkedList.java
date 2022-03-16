@@ -16,4 +16,8 @@ public class MyLinkedList<E> {
 
     public MyLinkedList() {
     }
+    public void add(int index, E element){
+        Node temp = head;
+
+    }
 }

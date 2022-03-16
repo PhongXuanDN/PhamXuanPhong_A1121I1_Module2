@@ -1,8 +1,10 @@
-package CaseStudy;
+package CaseStudy.Model;
+
+import CaseStudy.Model.Facility;
 
 import java.util.Date;
 
-public class Villa extends DichVu {
+public class Villa extends Facility {
     private String tieuChuanPhong;
 
     public String getTieuChuanPhong() {

@@ -1,15 +1,9 @@
-package CaseStudy;
+package CaseStudy.Model;
 
 import java.util.Date;
 
-public class Customer {
-    public String getMaKhachHang() {
-        return maKhachHang;
-    }
+public abstract class Person {
 
-    public void setMaKhachHang(String maKhachHang) {
-        this.maKhachHang = maKhachHang;
-    }
 
     public String getHoTen() {
         return hoTen;
@@ -27,12 +21,12 @@ public class Customer {
         this.ngaySinh = ngaySinh;
     }
 
-    public boolean isGioiTinh() {
-        return GioiTinh;
+    public String getGioiTinh() {
+        return gioiTinh;
     }
 
     public void setGioiTinh(boolean gioiTinh) {
-        GioiTinh = gioiTinh;
+        gioiTinh = gioiTinh;
     }
 
     public int getSoCMND() {
@@ -59,30 +53,24 @@ public class Customer {
         this.email = email;
     }
 
-    public String getLoaiKhach() {
-        return loaiKhach;
+    public Person() {
     }
 
-    public void setLoaiKhach(String loaiKhach) {
-        this.loaiKhach = loaiKhach;
+    public Person(String hoTen, Date ngaySinh, String gioiTinh, int soCMND, int soDienThoai, String email) {
+
+        this.hoTen = hoTen;
+        this.ngaySinh = ngaySinh;
+        this.gioiTinh = gioiTinh;
+        this.soCMND = soCMND;
+        this.soDienThoai = soDienThoai;
+        this.email = email;
     }
 
-    public String getDiaChi() {
-        return diaChi;
-    }
 
-    public void setDiaChi(String diaChi) {
-        this.diaChi = diaChi;
-    }
-
-    private String maKhachHang;
     private String hoTen;
     private Date ngaySinh;
-    private boolean GioiTinh = true;
+    private String gioiTinh;
     private int soCMND;
     private int soDienThoai;
     private String email;
-    //Loại Customer bao gồm: (Diamond, Platinium, Gold, Silver, Member).
-    private String loaiKhach;
-    private String diaChi;
 }

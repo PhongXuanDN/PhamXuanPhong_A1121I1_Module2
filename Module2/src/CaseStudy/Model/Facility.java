@@ -1,8 +1,8 @@
-package CaseStudy;
+package CaseStudy.Model;
 
 import java.util.Date;
 
-public class DichVu {
+public abstract class Facility {
     private String tenDichVu;
 
     public String getTenDichVu() {
@@ -49,12 +49,11 @@ public class DichVu {
     private double chiPhiThue;
     private int soLuongNguoiMax;
     private Date kieuThue;
-    public DichVu(){}
-    public DichVu(double dienTich, double chiPhiThue, int soLuongNguoiMax, Date kieuThue){
+    public Facility(){}
+    public Facility(double dienTich, double chiPhiThue, int soLuongNguoiMax, Date kieuThue){
         this.dienTich = dienTich;
         this.chiPhiThue = chiPhiThue;
         this.soLuongNguoiMax = soLuongNguoiMax;
         this.kieuThue = kieuThue;
     }
-
 }
