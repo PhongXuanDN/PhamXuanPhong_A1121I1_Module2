@@ -1,7 +1,8 @@
 package Ss5.Modifier_Method_Static.BaiTap;
 
 public class Student {
-    public void setName(String name) {
+    public void setName(String name)
+    {
         this.name = name;
     }
 

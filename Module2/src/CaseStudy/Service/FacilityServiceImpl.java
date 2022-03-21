@@ -1,10 +1,15 @@
 package CaseStudy.Service;
 
-public class FacilityServiceImpl implements FacilityService{
+public class FacilityServiceImpl implements FacilityService {
     @Override
-    public void display(){}
+    public void display() {
+    }
+
     @Override
-    public void add(){}
+    public void add() {
+    }
+
     @Override
-    public void edit(){}
+    public void edit() {
+    }
 }
