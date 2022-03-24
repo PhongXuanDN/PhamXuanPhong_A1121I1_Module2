@@ -14,10 +14,7 @@ public class QuanLyTest{
         System.out.println("Nhập Id muốn sửa: ");
         String id = scanner.nextLine();
         for(int i =0;i<quanLIES.size();i++){
-            QuanLyTest quanLyTest = (QuanLyTest) quanLIES;
-            if(id == quanLIES.){
 
-            }
         }
     }
 }

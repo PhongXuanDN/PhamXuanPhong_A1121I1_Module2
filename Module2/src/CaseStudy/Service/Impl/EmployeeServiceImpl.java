@@ -1,4 +1,6 @@
-package CaseStudy.Service;
+package CaseStudy.Service.Impl;
+
+import CaseStudy.Service.CustomerService;
 
 public class EmployeeServiceImpl implements CustomerService {
     @Override

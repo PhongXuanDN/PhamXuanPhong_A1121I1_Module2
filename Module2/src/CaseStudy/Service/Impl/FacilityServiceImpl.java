@@ -1,4 +1,6 @@
-package CaseStudy.Service;
+package CaseStudy.Service.Impl;
+
+import CaseStudy.Service.FacilityService;
 
 public class FacilityServiceImpl implements FacilityService {
     @Override
