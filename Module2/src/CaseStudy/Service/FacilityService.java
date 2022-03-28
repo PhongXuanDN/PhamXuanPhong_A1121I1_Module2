@@ -7,4 +7,6 @@ public interface FacilityService extends Service {
     public void add();
 
     public void edit();
+
+    void delete();
 }

@@ -5,44 +5,36 @@ import java.util.Date;
 public abstract class Person {
 
 
-    public String getHoTen() {
-        return hoTen;
+    public String getName() {
+        return name;
     }
 
-    public void setHoTen(String hoTen) {
-        this.hoTen = hoTen;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public Date getNgaySinh() {
-        return ngaySinh;
+    public String getSex() {
+        return sex;
     }
 
-    public void setNgaySinh(Date ngaySinh) {
-        this.ngaySinh = ngaySinh;
+    public void setSex(boolean sex) {
+        sex = sex;
     }
 
-    public String getGioiTinh() {
-        return gioiTinh;
+    public int getIdCard() {
+        return idCard;
     }
 
-    public void setGioiTinh(boolean gioiTinh) {
-        gioiTinh = gioiTinh;
+    public void setIdCard(int idCard) {
+        this.idCard = idCard;
     }
 
-    public int getSoCMND() {
-        return soCMND;
+    public int getPhone() {
+        return phone;
     }
 
-    public void setSoCMND(int soCMND) {
-        this.soCMND = soCMND;
-    }
-
-    public int getSoDienThoai() {
-        return soDienThoai;
-    }
-
-    public void setSoDienThoai(int soDienThoai) {
-        this.soDienThoai = soDienThoai;
+    public void setPhone(int phone) {
+        this.phone = phone;
     }
 
     public String getEmail() {
@@ -56,21 +48,19 @@ public abstract class Person {
     public Person() {
     }
 
-    public Person(String hoTen, Date ngaySinh, String gioiTinh, int soCMND, int soDienThoai, String email) {
+    public Person(String name, String sex, int idCard, int phone, String email) {
 
-        this.hoTen = hoTen;
-        this.ngaySinh = ngaySinh;
-        this.gioiTinh = gioiTinh;
-        this.soCMND = soCMND;
-        this.soDienThoai = soDienThoai;
+        this.name = name;
+        this.sex = sex;
+        this.idCard = idCard;
+        this.phone = phone;
         this.email = email;
     }
 
 
-    private String hoTen;
-    private Date ngaySinh;
-    private String gioiTinh;
-    private int soCMND;
-    private int soDienThoai;
+    private String name;
+    private String sex;
+    private int idCard;
+    private int phone;
     private String email;
 }

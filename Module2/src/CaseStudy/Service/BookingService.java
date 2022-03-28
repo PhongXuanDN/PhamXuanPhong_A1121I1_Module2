@@ -7,4 +7,9 @@ public class BookingService implements Service{
     public void add(){}
 
     public void edit(){}
+
+    @Override
+    public void delete() {
+
+    }
 }

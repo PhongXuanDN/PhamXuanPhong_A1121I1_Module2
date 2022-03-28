@@ -1,49 +1,47 @@
 package CaseStudy.Model;
 
-import java.util.Date;
-
 public class Customer extends Person {
     public Customer() {
     }
 
-    public Customer(String loaiKhach, String diaChi) {
-        this.loaiKhach = loaiKhach;
-        this.diaChi = diaChi;
+    public Customer(String typeOfGuest, String address) {
+        this.typeOfGuest = typeOfGuest;
+        this.address = address;
     }
 
-    public Customer(String maKhachHang, String hoTen, Date ngaySinh, String gioiTinh, int soCMND, int soDienThoai, String email, String loaiKhach, String diaChi) {
-        super(hoTen, ngaySinh, gioiTinh, soCMND, soDienThoai, email);
-        this.maKhachHang = maKhachHang;
-        this.loaiKhach = loaiKhach;
-        this.diaChi = diaChi;
+    public Customer(String id, String name, String sex, int idCard, int phone, String email, String typeOfGuest, String address) {
+        super(name, sex, idCard, phone, email);
+        this.id = id;
+        this.typeOfGuest = typeOfGuest;
+        this.address = address;
     }
 
-    public String getMaKhachHang() {
-        return maKhachHang;
+    public String getId() {
+        return id;
     }
 
-    public void setMaKhachHang(String maKhachHang) {
-        this.maKhachHang = maKhachHang;
+    public void setId(String id) {
+        this.id = id;
     }
 
     //Loại khách, Địa chỉ
-    private String maKhachHang;
-    private String loaiKhach;
-    private String diaChi;
+    private String id;
+    private String typeOfGuest;
+    private String address;
 
-    public String getLoaiKhach() {
-        return loaiKhach;
+    public String getTypeOfGuest() {
+        return typeOfGuest;
     }
 
-    public void setLoaiKhach(String loaiKhach) {
-        this.loaiKhach = loaiKhach;
+    public void setTypeOfGuest(String typeOfGuest) {
+        this.typeOfGuest = typeOfGuest;
     }
 
-    public String getDiaChi() {
-        return diaChi;
+    public String getAddress() {
+        return address;
     }
 
-    public void setDiaChi(String diaChi) {
-        this.diaChi = diaChi;
+    public void setAddress(String address) {
+        this.address = address;
     }
 }

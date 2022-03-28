@@ -7,4 +7,6 @@ public interface EmployeeService extends Service{
     public void add();
 
     public void edit();
+
+    void delete();
 }

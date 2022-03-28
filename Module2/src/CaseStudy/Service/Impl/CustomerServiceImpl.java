@@ -9,4 +9,9 @@ public class CustomerServiceImpl implements CustomerService {
     public void add(){}
     @Override
     public void edit(){}
+
+    @Override
+    public void delete() {
+
+    }
 }

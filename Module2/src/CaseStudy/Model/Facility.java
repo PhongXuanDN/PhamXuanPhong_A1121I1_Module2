@@ -3,57 +3,57 @@ package CaseStudy.Model;
 import java.util.Date;
 
 public abstract class Facility {
-    private String tenDichVu;
+    private String name;
 
-    public String getTenDichVu() {
-        return tenDichVu;
+    public String getName() {
+        return name;
     }
 
-    public void setTenDichVu(String tenDichVu) {
-        this.tenDichVu = tenDichVu;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public double getDienTich() {
-        return dienTich;
+    public double getArea() {
+        return area;
     }
 
-    public void setDienTich(double dienTich) {
-        this.dienTich = dienTich;
+    public void setArea(double area) {
+        this.area = area;
     }
 
-    public double getChiPhiThue() {
-        return chiPhiThue;
+    public double getCost() {
+        return cost;
     }
 
-    public void setChiPhiThue(double chiPhiThue) {
-        this.chiPhiThue = chiPhiThue;
+    public void setCost(double cost) {
+        this.cost = cost;
     }
 
-    public int getSoLuongNguoiMax() {
-        return soLuongNguoiMax;
+    public int getNumberOfPeople() {
+        return numberOfPeople;
     }
 
-    public void setSoLuongNguoiMax(int soLuongNguoiMax) {
-        this.soLuongNguoiMax = soLuongNguoiMax;
+    public void setNumberOfPeople(int numberOfPeople) {
+        this.numberOfPeople = numberOfPeople;
     }
 
-    public Date getKieuThue() {
-        return kieuThue;
+    public Date getRentalType() {
+        return rentalType;
     }
 
-    public void setKieuThue(Date kieuThue) {
-        this.kieuThue = kieuThue;
+    public void setRentalType(Date rentalType) {
+        this.rentalType = rentalType;
     }
 
-    private double dienTich = 1.0;
-    private double chiPhiThue;
-    private int soLuongNguoiMax;
-    private Date kieuThue;
+    private double area = 1.0;
+    private double cost;
+    private int numberOfPeople;
+    private Date rentalType;
     public Facility(){}
-    public Facility(double dienTich, double chiPhiThue, int soLuongNguoiMax, Date kieuThue){
-        this.dienTich = dienTich;
-        this.chiPhiThue = chiPhiThue;
-        this.soLuongNguoiMax = soLuongNguoiMax;
-        this.kieuThue = kieuThue;
+    public Facility(double area, double cost, int numberOfPeople, Date rentalType){
+        this.area = area;
+        this.cost = cost;
+        this.numberOfPeople = numberOfPeople;
+        this.rentalType = rentalType;
     }
 }

@@ -6,49 +6,57 @@ public class Employee extends Person {
     public Employee() {
     }
 
-    public Employee(String maNhanVien, String trinhDo, String viTri, int luong) {
-        this.maNhanVien = maNhanVien;
-        this.trinhDo = trinhDo;
-        this.viTri = viTri;
-        this.luong = luong;
+    public Employee(String id, String level, String position, int salary) {
+        this.id = id;
+        this.level = level;
+        this.position = position;
+        this.salary = salary;
     }
 
-    public Employee(String maNhanVien, String hoTen, Date ngaySinh, String gioiTinh, int soCMND, int soDienThoai, String email, String trinhDo, String viTri, int luong) {
-        super(hoTen, ngaySinh, gioiTinh, soCMND, soDienThoai, email);
-        this.maNhanVien = maNhanVien;
-        this.trinhDo = trinhDo;
-        this.viTri = viTri;
-        this.luong = luong;
+    public Employee(String id,
+                    String name,
+                    String sex,
+                    int idCard,
+                    int phone,
+                    String email,
+                    String level,
+                    String position,
+                    int salary) {
+        super(name, sex, idCard, phone, email);
+        this.id = id;
+        this.level = level;
+        this.position = position;
+        this.salary = salary;
     }
 
-    public String getTrinhDo() {
-        return trinhDo;
+    public String getLevel() {
+        return level;
     }
 
-    public void setTrinhDo(String trinhDo) {
-        this.trinhDo = trinhDo;
+    public void setLevel(String level) {
+        this.level = level;
     }
 
-    public String getViTri() {
-        return viTri;
+    public String getPosition() {
+        return position;
     }
 
-    public void setViTri(String viTri) {
-        this.viTri = viTri;
+    public void setPosition(String position) {
+        this.position = position;
     }
 
-    public int getLuong() {
-        return luong;
+    public int getSalary() {
+        return salary;
     }
 
-    public void setLuong(int luong) {
-        this.luong = luong;
+    public void setSalary(int salary) {
+        this.salary = salary;
     }
 
     //Trình độ, Vị trí, lương
-    private String maNhanVien;
-    private String trinhDo;
-    private String viTri;
-    private int luong;
+    private String id;
+    private String level;
+    private String position;
+    private int salary;
 
 }
