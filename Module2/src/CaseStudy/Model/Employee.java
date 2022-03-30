@@ -3,27 +3,24 @@ package CaseStudy.Model;
 import java.util.Date;
 
 public class Employee extends Person {
-    public Employee() {
+    public Employee(int indexEdit, String name, int age, String sex, String idCard, String email, String level, String position, int salary) {
     }
 
-    public Employee(String id, String level, String position, int salary) {
-        this.id = id;
+    public Employee(String level, String position, int salary) {
         this.level = level;
         this.position = position;
         this.salary = salary;
     }
 
-    public Employee(String id,
+    public Employee(int id,
                     String name,
                     String sex,
-                    int idCard,
-                    int phone,
+                    String idCard,
                     String email,
                     String level,
                     String position,
                     int salary) {
-        super(name, sex, idCard, phone, email);
-        this.id = id;
+        super(id,name, sex, idCard, email);
         this.level = level;
         this.position = position;
         this.salary = salary;
@@ -54,9 +51,16 @@ public class Employee extends Person {
     }
 
     //Trình độ, Vị trí, lương
-    private String id;
     private String level;
     private String position;
     private int salary;
 
+    @Override
+    public String toString() {
+        return "Employee{"+ super.toString()+
+                "level='" + level + '\'' +
+                ", position='" + position + '\'' +
+                ", salary=" + salary +
+                '}';
+    }
 }

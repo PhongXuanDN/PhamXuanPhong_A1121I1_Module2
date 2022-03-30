@@ -21,20 +21,12 @@ public abstract class Person {
         sex = sex;
     }
 
-    public int getIdCard() {
+    public String getIdCard() {
         return idCard;
     }
 
-    public void setIdCard(int idCard) {
+    public void setIdCard(String idCard) {
         this.idCard = idCard;
-    }
-
-    public int getPhone() {
-        return phone;
-    }
-
-    public void setPhone(int phone) {
-        this.phone = phone;
     }
 
     public String getEmail() {
@@ -48,19 +40,38 @@ public abstract class Person {
     public Person() {
     }
 
-    public Person(String name, String sex, int idCard, int phone, String email) {
-
+    public Person(int id,String name, String sex, String idCard, String email) {
+        this.id = id;
         this.name = name;
         this.sex = sex;
         this.idCard = idCard;
-        this.phone = phone;
         this.email = email;
     }
 
+    public void setSex(String sex) {
+        this.sex = sex;
+    }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    private int id;
     private String name;
     private String sex;
-    private int idCard;
-    private int phone;
+    private String idCard;
     private String email;
+
+    @Override
+    public String toString() {
+        return "id=" + id +
+                ", name='" + name + '\'' +
+                ", sex='" + sex + '\'' +
+                ", idCard='" + idCard + '\'' +
+                ", email='" + email;
+    }
 }

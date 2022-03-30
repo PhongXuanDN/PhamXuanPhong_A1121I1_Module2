@@ -1,15 +1,12 @@
 package CaseStudy.Service;
 
-public class BookingService implements Service{
-    @Override
-    public void display(){}
+public interface BookingService{
 
-    public void add(){}
+    public default void addBooking(){};
 
-    public void edit(){}
 
-    @Override
-    public void delete() {
 
-    }
+    void displayListBooking();
+
+
 }

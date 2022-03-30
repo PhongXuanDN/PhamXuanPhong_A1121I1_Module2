@@ -1,12 +1,14 @@
 package CaseStudy.Service;
 
-public interface FacilityService extends Service {
-    @Override
+public interface FacilityService {
+
     public void display();
 
-    public void add();
+    public void  displayMaintain();
 
-    public void edit();
+    void addNewVilla();
 
-    void delete();
+    void addNewRoom();
+
+    void addNewHouse();
 }

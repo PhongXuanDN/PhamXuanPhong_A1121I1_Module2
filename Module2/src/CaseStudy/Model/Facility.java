@@ -3,7 +3,20 @@ package CaseStudy.Model;
 import java.util.Date;
 
 public abstract class Facility {
+    private String idFacility;
     private String name;
+    private double area = 1.0;
+    private int rentalPrice;
+    private int rentaPeopleMax;
+    private String rentalType;
+
+    public String getIdFacility() {
+        return idFacility;
+    }
+
+    public void setIdFacility(String idFacility) {
+        this.idFacility = idFacility;
+    }
 
     public String getName() {
         return name;
@@ -21,39 +34,48 @@ public abstract class Facility {
         this.area = area;
     }
 
-    public double getCost() {
-        return cost;
+    public double getRentalPrice() {
+        return rentalPrice;
     }
 
-    public void setCost(double cost) {
-        this.cost = cost;
+    public void setRentalPrice(int rentalPrice) {
+        this.rentalPrice = rentalPrice;
     }
 
-    public int getNumberOfPeople() {
-        return numberOfPeople;
+    public int getRentaPeopleMax() {
+        return rentaPeopleMax;
     }
 
-    public void setNumberOfPeople(int numberOfPeople) {
-        this.numberOfPeople = numberOfPeople;
+    public void setRentaPeopleMax(int rentaPeopleMax) {
+        this.rentaPeopleMax = rentaPeopleMax;
     }
 
-    public Date getRentalType() {
+    public String getRentalType() {
         return rentalType;
     }
 
-    public void setRentalType(Date rentalType) {
+    public void setRentalType(String rentalType) {
         this.rentalType = rentalType;
     }
 
-    private double area = 1.0;
-    private double cost;
-    private int numberOfPeople;
-    private Date rentalType;
+
     public Facility(){}
-    public Facility(double area, double cost, int numberOfPeople, Date rentalType){
+    public Facility(String idFacility, double area, int rentalPrice, int rentaPeopleMax, String rentalType){
+        this.idFacility = idFacility;
         this.area = area;
-        this.cost = cost;
-        this.numberOfPeople = numberOfPeople;
+        this.rentalPrice = rentalPrice;
+        this.rentaPeopleMax = rentaPeopleMax;
         this.rentalType = rentalType;
+    }
+
+    @Override
+    public String toString() {
+        return "Facility{" +
+                "name='" + name + '\'' +
+                ", area=" + area +
+                ", rental price=" + rentalPrice +
+                ", rental People Max=" + rentaPeopleMax +
+                ", rentalType=" + rentalType +
+                '}';
     }
 }

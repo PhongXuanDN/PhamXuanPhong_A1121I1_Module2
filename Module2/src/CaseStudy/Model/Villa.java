@@ -4,6 +4,8 @@ import java.util.Date;
 
 public class Villa extends Facility {
     private String standard;
+    private double areaPool;
+    private int numberFloor;
 
     public String getStandard() {
         return standard;
@@ -29,16 +31,16 @@ public class Villa extends Facility {
         this.numberFloor = numberFloor;
     }
 
-    private double areaPool;
-    private int numberFloor;
+
     public Villa(){}
     public Villa(String standard, double areaPool, int numberFloor){
         this.standard = standard;
         this.areaPool = areaPool;
         this.numberFloor = numberFloor;
     }
-    public Villa(String standard, double areaPool, int numberFloor, double area, double cost, int numberOfPeople, Date reantalType){
-        super(area,cost,numberOfPeople,reantalType);
+    //String idFacility, double area, int rentalPrice, int rentaPeopleMax, String rentalType
+    public Villa(String id, double area, int rentalPrice, int rentaPeopleMax, String rentalType,String standard, double areaPool, int numberFloor){
+        super(id,area,rentalPrice, rentaPeopleMax,rentalType);
         this.standard = standard;
         this.areaPool = areaPool;
         this.numberFloor = numberFloor;

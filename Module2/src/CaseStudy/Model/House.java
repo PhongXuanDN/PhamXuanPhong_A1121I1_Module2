@@ -1,41 +1,37 @@
 package CaseStudy.Model;
 
-import CaseStudy.Model.Facility;
-
-import java.util.Date;
-
 public class House extends Facility {
     public House() {
     }
 
-    public House(String tieuChuanPhong, int soTang) {
-        this.tieuChuanPhong = tieuChuanPhong;
-        this.soTang = soTang;
+    public House(String standardVilla, int floor) {
+        this.standardVilla = standardVilla;
+        this.floor = floor;
     }
 
-    public House(double dienTich, double chiPhiThue, int soLuongNguoiMax, Date kieuThue, String tieuChuanPhong, int soTang) {
-        super(dienTich, chiPhiThue, soLuongNguoiMax, kieuThue);
-        this.tieuChuanPhong = tieuChuanPhong;
-        this.soTang = soTang;
+    public House(String id, double area, int rentalPrice, int rentaPeopleMax, String styleRenta, String standardVilla, int floor) {
+        super(id,area, rentalPrice, rentaPeopleMax, styleRenta);
+        this.standardVilla = standardVilla;
+        this.floor = floor;
     }
 
-    public String getTieuChuanPhong() {
-        return tieuChuanPhong;
+    public String getStandardVilla() {
+        return standardVilla;
     }
 
-    public void setTieuChuanPhong(String tieuChuanPhong) {
-        this.tieuChuanPhong = tieuChuanPhong;
+    public void setStandardVilla(String standardVilla) {
+        this.standardVilla = standardVilla;
     }
 
-    public int getSoTang() {
-        return soTang;
+    public int getFloor() {
+        return floor;
     }
 
-    public void setSoTang(int soTang) {
-        this.soTang = soTang;
+    public void setFloor(int floor) {
+        this.floor = floor;
     }
 
-    private String tieuChuanPhong;
-    private int soTang;
+    private String standardVilla;
+    private int floor;
 
 }
